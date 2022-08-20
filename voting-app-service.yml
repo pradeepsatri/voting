@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 medata: 
   name: voting-service
-  lables:
+  labels:
     name: voting-service
     app: demo-voting-app
 
