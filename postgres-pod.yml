@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: postgres-pod
+  lables:
+    name: postgres-pod
+    app: demo-voting-app
+
+spec:
+  containers:
+  - name: postgres
+    image: dockertest00.azurecr.io/postgres:9.4
+    ports:
+      - containerPort: 5432

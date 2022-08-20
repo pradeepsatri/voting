@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: result-app-pod
+  lables:
+    name: result-app-pod
+    app: demo-voting-app
+
+spec:
+  containers:
+  - name: result-app
+    image: dockertest00.azurecr.io/result
+    ports:
+      -containerPort: 80
